@@ -63,14 +63,14 @@
 
 <script type="text/ng-template" id="/posts.html">
 
-<form ng-submit="addComment()"
+<form 
 	style="margin-top:30px;">
 	<h3>Add a new comment</h3>
 
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Comment" ng-model="body"></input>
 	</div>
-	<button type="submit" class="btn btn-primary">Post</button>
+	<button type="submit" class="btn btn-primary" ng-click="addComment()">Post</button>
 </form>
 
 	<div class="page-header">
